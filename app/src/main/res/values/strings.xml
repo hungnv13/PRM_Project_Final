@@ -1,4 +1,29 @@
 <resources>
-    <string name="app_name">PRM_Project_Final</string>
     <string name="cart">Cart</string>
+    <string name="app_name">Highlands Coffee</string>
+
+
+    <!-- Phone Input Screen -->
+    <string name="start_journey">Bắt Đầu Cuộc Hành Trình\nCủa Bạn</string>
+    <string name="phone_hint">Số Điện Thoại</string>
+    <string name="continue_btn">TIẾP TỤC</string>
+    <string name="or_text">hoặc</string>
+    <string name="continue_as_guest">TIẾP TỤC NHƯ KHÁCH</string>
+    <string name="already_have_account">Đã Có Tài Khoản?</string>
+    <string name="sign_in">Đăng Nhập</string>
+    <string name="country_code">+84</string>
+
+    <!-- Login Screen -->
+    <string name="welcome_back">Chào Mừng Trở Lại</string>
+    <string name="email_phone_hint">Email/Số Điện Thoại</string>
+    <string name="password_hint">Mật Khẩu</string>
+    <string name="remember_me">Ghi nhớ tôi</string>
+    <string name="forgot_password">Quên Mật Khẩu?</string>
+    <string name="login_btn">ĐĂNG NHẬP</string>
+    <string name="new_customer">Khách Hàng Mới?</string>
+    <string name="create_account">Tạo Một Tài Khoản</string>
+
+    <!-- Main Screen -->
+    <string name="welcome_message">Chào mừng đến với Highlands Coffee!</string>
+    <string name="logout">Đăng Xuất</string>
 </resources>
