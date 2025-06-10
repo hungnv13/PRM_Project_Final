@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <!-- Spacer Top -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Logo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/highlands_logo"
+            android:contentDescription="Highlands Coffee Logo"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_journey"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/highlands_brown"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="48dp" />
+
+    </LinearLayout>
+
+    <!-- Phone Input Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Phone Input Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:background="@drawable/input_background"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <!-- Vietnam Flag -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="16dp"
+                android:src="@drawable/vietnam_flag"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Country Code -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/country_code"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginEnd="12dp" />
+
+            <!-- Phone Input -->
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/phone_hint"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_gray"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp" />
+
+        </LinearLayout>
+
+        <!-- Continue Button -->
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/continue_btn"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:layout_marginBottom="32dp" />
+
+    </LinearLayout>
+
+    <!-- Or Divider -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or_text"
+            android:textSize="14sp"
+            android:textColor="@color/dark_gray"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Social Login Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="40dp">
+
+            <!-- Apple Login -->
+            <ImageButton
+                android:id="@+id/btn_apple"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/social_button_background"
+                android:src="@drawable/ic_apple"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="Apple Login" />
+
+            <!-- Google Login -->
+            <ImageButton
+                android:id="@+id/btn_google"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/social_button_background"
+                android:src="@drawable/ic_google"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="Google Login" />
+
+            <!-- Facebook Login -->
+            <ImageButton
+                android:id="@+id/btn_facebook"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/social_button_background"
+                android:src="@drawable/ic_facebook"
+                android:contentDescription="Facebook Login" />
+
+        </LinearLayout>
+
+        <!-- Continue as Guest -->
+        <TextView
+            android:id="@+id/tv_guest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_as_guest"
+            android:textSize="16sp"
+            android:height="48dp"
+            android:textColor="@color/highlands_red"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    <!-- Spacer Middle -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Bottom Sign In Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_have_account"
+            android:textSize="14sp"
+            android:textColor="@color/dark_gray"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/tv_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:textSize="14sp"
+            android:height="48dp"
+            android:textColor="@color/highlands_red"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
