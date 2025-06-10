@@ -85,7 +85,7 @@ public abstract class BaseActivity extends AppCompatActivity {
                 //intent = new Intent(this, StoreActivity.class);
                 break;
             case 4:
-                //intent = new Intent(this, OtherActivity.class);
+                intent = new Intent(this, OtherActivity.class);
                 break;
             default:
                 return;

@@ -12,4 +12,6 @@
     <!-- Highland Coffee Brand Colors -->
     <color name="highland_red">#FFB71C1C</color>
     <color name="highland_dark_red">#FF8B0000</color>
+    <color name="highland_light_red">#FFD32F2F</color>
+
 </resources>

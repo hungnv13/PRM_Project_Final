@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header Profile Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header_gradient"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Language Selector -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/btn_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:minWidth="48dp"
+                    android:text="Tiếng Việt ▼"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_language_selector"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="8dp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+            <!-- Profile Info -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Avatar -->
+                <ImageView
+                    android:id="@+id/img_avatar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/default_avatar"
+                    android:background="@drawable/bg_circle_white"
+                    android:scaleType="centerCrop" />
+
+                <!-- User Info -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hoàng Cầm Trịnh | THÀNH VIÊN"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- DRIPS -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:text="💧"
+                            android:textSize="12sp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/tv_drips"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DRIPS: 0"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp"
+                            android:layout_marginStart="5dp" />
+                    </LinearLayout>
+
+                    <!-- Balance -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:text="💳"
+                            android:textSize="12sp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/tv_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Trả Trước: 0 ₫"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp"
+                            android:layout_marginStart="5dp" />
+
+                        <TextView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:text="❤️"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:layout_marginStart="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Activate Button -->
+                <TextView
+                    android:id="@+id/btn_activate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:minWidth="48dp"
+                    android:text="KÍCH HOẠT"
+                    android:textColor="@color/highland_red"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/bg_activate_button"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="8dp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Account Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <!-- Section Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tài Khoản"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FF333333"
+                android:padding="16dp"
+                android:background="#FFF0F0F0" />
+
+            <!-- Profile Menu -->
+            <LinearLayout
+                android:id="@+id/menu_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:text="👤"
+                    android:textSize="18sp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hồ Sơ"
+                    android:textSize="14sp"
+                    android:textColor="#FF333333"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:text="▶"
+                    android:textSize="12sp"
+                    android:textColor="#FFCCCCCC"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFF0F0F0"
+                android:layout_marginStart="56dp" />
+
+            <!-- Settings Menu -->
+            <LinearLayout
+                android:id="@+id/menu_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:text="⚙️"
+                    android:textSize="18sp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cài Đặt"
+                    android:textSize="14sp"
+                    android:textColor="#FF333333"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:text="▶"
+                    android:textSize="12sp"
+                    android:textColor="#FFCCCCCC"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- General Info Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <!-- Section Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thông Tin Chung"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FF333333"
+                android:padding="16dp"
+                android:background="#FFF0F0F0" />
+
+            <!-- Terms Menu -->
+            <LinearLayout
+                android:id="@+id/menu_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:text="📄"
+                    android:textSize="18sp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Điều khoản dịch vụ"
+                    android:textSize="14sp"
+                    android:textColor="#FF333333"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:text="▶"
+                    android:textSize="12sp"
+                    android:textColor="#FFCCCCCC"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFF0F0F0"
+                android:layout_marginStart="56dp" />
+
+            <!-- Privacy Menu -->
+            <LinearLayout
+                android:id="@+id/menu_privacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:text="🛡️"
+                    android:textSize="18sp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Chính sách bảo mật"
+                    android:textSize="14sp"
+                    android:textColor="#FF333333"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:text="▶"
+                    android:textSize="12sp"
+                    android:textColor="#FFCCCCCC"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFF0F0F0"
+                android:layout_marginStart="56dp" />
+
+            <!-- About Menu -->
+            <LinearLayout
+                android:id="@+id/menu_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:text="ℹ️"
+                    android:textSize="18sp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Giới Thiệu Về Phiên Bản Ứng Dụng"
+                    android:textSize="14sp"
+                    android:textColor="#FF333333"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:text="▶"
+                    android:textSize="12sp"
+                    android:textColor="#FFCCCCCC"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Support Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <!-- Section Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trung Tâm Trợ Giúp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FF333333"
+                android:padding="16dp"
+                android:background="#FFF0F0F0" />
+
+            <!-- FAQ Menu -->
+            <LinearLayout
+                android:id="@+id/menu_faq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:text="❓"
+                    android:textSize="18sp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Câu Hỏi Thường Gặp"
+                    android:textSize="14sp"
+                    android:textColor="#FF333333"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:text="▶"
+                    android:textSize="12sp"
+                    android:textColor="#FFCCCCCC"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFF0F0F0"
+                android:layout_marginStart="56dp" />
+
+            <!-- Feedback Menu -->
+            <LinearLayout
+                android:id="@+id/menu_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:text="💬"
+                    android:textSize="18sp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Phản Hồi &amp; Hỗ Trợ"
+                    android:textSize="14sp"
+                    android:textColor="#FF333333"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:text="▶"
+                    android:textSize="12sp"
+                    android:textColor="#FFCCCCCC"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Logout Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="20dp">
+
+            <TextView
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ĐĂNG XUẤT"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/bg_logout_button"
+                android:padding="16dp"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
