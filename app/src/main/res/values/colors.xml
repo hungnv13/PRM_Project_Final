@@ -14,4 +14,10 @@
     <color name="light_gray">#F5F5F5</color>
     <color name="dark_gray">#666666</color>
     <color name="input_background">#E8E8E8</color>
+
+    <!-- Splash Screen Colors -->
+    <color name="splash_background">#FFF5F5</color>
+    <color name="matcha_green">#90C695</color>
+    <color name="light_pink">#FFE4E6</color>
+    <color name="accent_pink">#FF9FAB</color>
 </resources>
