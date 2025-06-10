@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">PRM_Project_Final</string>
+    <!--<string name="app_name">Highlands Coffee</string>-->
+    <string name="start_journey">Bắt Đầu Cuộc Hành Trình\nCủa Bạn</string>
+    <string name="phone_hint">Số Điện Thoại</string>
+    <string name="continue_btn">TIẾP TỤC</string>
+    <string name="or_text">hoặc</string>
+    <string name="continue_as_guest">TIẾP TỤC NHƯ KHÁCH</string>
+    <string name="already_have_account">Đã Có Tài Khoản?</string>
+    <string name="sign_in">Đăng Nhập</string>
+    <string name="country_code">+84</string>
 </resources>
