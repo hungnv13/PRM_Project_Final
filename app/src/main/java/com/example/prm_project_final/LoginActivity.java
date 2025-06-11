@@ -78,8 +78,11 @@ public class LoginActivity extends AppCompatActivity {
             navigateToHome("Facebook User");
         });
 
-        // Forgot password
-        tvForgotPassword.setOnClickListener(v -> showToast("Chức năng quên mật khẩu"));
+        // Forgot password - Navigate to ForgotPasswordActivity
+        tvForgotPassword.setOnClickListener(v -> {
+            Intent intent = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
+            startActivity(intent);
+        });
 
         // Create account - navigate back to register
         tvCreateAccount.setOnClickListener(v -> {

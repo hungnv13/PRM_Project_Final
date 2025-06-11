@@ -3,7 +3,7 @@
     <string name="app_name">Highlands Coffee</string>
 
 
-    <!-- Phone Input Screen -->
+    <!-- Register Screen -->
     <string name="start_journey">Bắt Đầu Cuộc Hành Trình\nCủa Bạn</string>
     <string name="phone_hint">Số Điện Thoại</string>
     <string name="continue_btn">TIẾP TỤC</string>
@@ -23,7 +23,9 @@
     <string name="new_customer">Khách Hàng Mới?</string>
     <string name="create_account">Tạo Một Tài Khoản</string>
 
-    <!-- Main Screen -->
     <string name="welcome_message">Chào mừng đến với Highlands Coffee!</string>
-    <string name="logout">Đăng Xuất</string>
+    <!-- Forgot Password Screen -->
+    <string name="forgot_password_title">Quên Mật Khẩu Của Bạn?</string>
+    <string name="forgot_password_description">Nhập địa chỉ email hoặc số điện thoại bạn đã sử dụng để đăng nhập vào Highlands Coffee để đặt lại mật khẩu của mình.</string>
+    <string name="continue_text">TIẾP TỤC</string>
 </resources>
