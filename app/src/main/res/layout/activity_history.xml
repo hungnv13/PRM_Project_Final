@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFA">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp">
+
+        <FrameLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/circle_gray_background"
+                android:padding="8dp"
+                android:src="@drawable/ic_user" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_user" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_order" />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_search" />
+
+    </LinearLayout>
+
+    <!-- TABS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <!-- Tab Đơn Đặt Hàng -->
+        <LinearLayout
+            android:id="@+id/tab_orders"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tab_orders_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đơn Đặt Hàng"
+                android:textColor="#B71C1C"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <!-- Gạch chân -->
+            <View
+                android:id="@+id/tab_orders_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#B71C1C"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <!-- Tab Điểm Drips -->
+        <LinearLayout
+            android:id="@+id/tab_drips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tab_drips_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Điểm Drips"
+                android:textColor="#888888"
+                android:textSize="16sp" />
+
+            <!-- Gạch chân -->
+            <View
+                android:id="@+id/tab_drips_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#B71C1C"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- NỘI DUNG -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F5F5F5">
+
+        <TextView
+            android:id="@+id/textNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Không Có Dữ Liệu."
+            android:textColor="#4E342E"
+            android:textSize="16sp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+</LinearLayout>
