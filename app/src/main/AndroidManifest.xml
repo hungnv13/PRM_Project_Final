@@ -13,6 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PRM_Project_Final"
         tools:targetApi="31">
+
+        <activity android:name=".HistoryActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
