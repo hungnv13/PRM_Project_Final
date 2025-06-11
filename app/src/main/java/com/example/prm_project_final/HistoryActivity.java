@@ -19,4 +19,5 @@ public class HistoryActivity extends BaseActivity {
     protected int getCurrentTabIndex() {
         return 2;
     }
-}
+
+  }

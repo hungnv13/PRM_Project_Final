@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
@@ -24,7 +25,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_home"
-            android:tint="@color/nav_icon_color" />
+            app:tint="@color/nav_icon_color" />
 
         <TextView
             android:id="@+id/text_home"
@@ -53,7 +54,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_order"
-            android:tint="@color/nav_icon_selected" />
+            app:tint="@color/nav_icon_selected" />
 
         <TextView
             android:id="@+id/text_order"
@@ -82,7 +83,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_activity"
-            android:tint="@color/nav_icon_color" />
+            app:tint="@color/nav_icon_color" />
 
         <TextView
             android:id="@+id/text_activity"
@@ -111,7 +112,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_store"
-            android:tint="@color/nav_icon_color" />
+            app:tint="@color/nav_icon_color" />
 
         <TextView
             android:id="@+id/text_store"
@@ -140,7 +141,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_menu"
-            android:tint="@color/nav_icon_color" />
+            app:tint="@color/nav_icon_color" />
 
         <TextView
             android:id="@+id/text_other"

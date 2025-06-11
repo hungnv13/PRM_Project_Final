@@ -3,7 +3,6 @@ package com.example.prm_project_final;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -85,7 +84,7 @@ public abstract class BaseActivity extends AppCompatActivity {
                 //intent = new Intent(this, StoreActivity.class);
                 break;
             case 4:
-                //intent = new Intent(this, OtherActivity.class);
+                intent = new Intent(this, OtherActivity.class);
                 break;
             default:
                 return;

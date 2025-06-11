@@ -8,37 +8,49 @@
     <!-- HEADER -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:padding="12dp"
+
+        android:layout_height="70dp"
+        android:background="@android:color/white"
+        android:elevation="2dp"
         android:gravity="center_vertical"
-        android:background="@android:color/white">
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp">
 
-        <!-- Avatar -->
-        <ImageView
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:src="@drawable/circle_background"
-            android:background="@drawable/circle_background"
-            android:padding="8dp" />
+        <FrameLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp">
 
-        <!-- Spacer -->
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/circle_gray_background"
+                android:padding="8dp"
+                android:src="@drawable/ic_user" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_user" />
+
+        </FrameLayout>
+
         <View
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content" />
-
-        <!-- Icons -->
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_order"
-            android:layout_marginEnd="16dp" />
+            android:layout_height="1dp"
+            android:layout_weight="1" />
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_menu" />
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_order" />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_search" />
+
     </LinearLayout>
 
     <!-- TABS -->
@@ -120,3 +132,4 @@
             android:layout_gravity="center" />
     </FrameLayout>
 </LinearLayout>
+
