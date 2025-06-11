@@ -79,7 +79,7 @@ public abstract class BaseActivity extends AppCompatActivity {
                 //intent = new Intent(this, OrderActivity.class);
                 break;
             case 2:
-                //intent = new Intent(this, ActivityActivity.class);
+                intent = new Intent(this, HistoryActivity.class);
                 break;
             case 3:
                 //intent = new Intent(this, StoreActivity.class);
