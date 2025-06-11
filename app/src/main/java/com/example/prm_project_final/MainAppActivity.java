@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 public class MainAppActivity extends AppCompatActivity {
 
-    private static final int SPLASH_DELAY = 100; // 3 seconds
+    private static final int SPLASH_DELAY = 100;
     private TextView tvWelcome;
     private Handler splashHandler;
     private Runnable splashRunnable;
