@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="#F4F5F7"
     android:padding="24dp"
     tools:context=".MainActivity">
 
@@ -26,8 +26,8 @@
             android:id="@+id/iv_logo"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/highlands_logo"
-            android:contentDescription="Highlands Coffee Logo"
+            android:src="@drawable/clothing_logo"
+            android:contentDescription="Clothing Online Logo"
             android:layout_marginBottom="32dp" />
 
         <!-- Title -->

@@ -4,18 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="#F4F5F7"
     android:gravity="center"
     android:padding="24dp"
     tools:context=".MainAppActivity">
 
     <!-- Logo -->
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/highlands_logo"
-        android:contentDescription="Highlands Coffee Logo"
-        android:layout_marginBottom="40dp" />
+        android:layout_width="394dp"
+        android:layout_height="274dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="Clothing Online Logo"
+        android:src="@drawable/clothing_logo" />
 
     <!-- Welcome Message -->
     <TextView
